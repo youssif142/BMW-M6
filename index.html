@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>شاشة سوداء</title>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+      h1 {
+        color: red;
+        font-size: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>كسمك ي ابو ودان يهبل</h1>
+    <script>
+      // تأخير ظهور النص لمدة 5 ثواني
+      window.onload = function () {
+        setTimeout(function () {
+          document.body.style.opacity = 1;
+        }, 3000); // 5000 ميلي ثانية (5 ثواني)
+      };
+    </script>
+  </body>
+</html>
